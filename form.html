@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="css/form.css"/>
+
+</head>
+
+<body>
+  <main>
+    <!-- FORM  -->
+    <form>
+      <!-- Form item  -->
+      <div class="form-item">
+        <label class="form-label" for="name">Name</label>
+        <input value="Alex AAA" class="form-input" type="text" name="name" id="name" />
+      </div>
+
+      <!-- Form item -->
+      <div class="form-item">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-input" type="text" name="email" id="email" placeholder="youremail@gmail.com" />
+      </div>
+
+      <!-- Form item -->
+      <div class="form-item">
+        <label class="form-label">Type of talk</label>
+        <div class="form-radio-wrapper">
+          <input class="form-radio" name="type-of-talk" id="main-stage" type="radio" checked />
+          <label for="main-stage">Main stage</label>
+        </div>
+        <div class="form-radio-wrapper">
+          <input class="form-radio" name="type-of-talk" id="workshop" type="radio" />
+          <label for="workshop">Workshop</label>
+        </div>
+      </div>
+
+      <!-- Form item -->
+      <div class="form-item">
+        <label class="form-label">T-shirt Size</label>
+        <div class="form-select-wrapper">
+          <select class="form-select" name="t-shirt-size" id="t-shirt-size">
+            <option value="xs">Extra small</option>
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+            <option value="lx">Extra Large</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Form item  -->
+      <div class="form-item">
+        <label class="form-label">Abstract</label>
+        <textarea class="form-textarea"></textarea>
+      </div>
+
+      <!-- Form item  -->
+      <div class="form-item form-item--checkbox">
+        <input type="checkbox" name="available" id="available" />
+        <label class="form-label" for="available">I am actually available the date of the talk</label>
+      </div>
+
+      <div class="form-buttons">
+        <button class="form-button" type="submit">submit</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- import file javascript  -->
+  <script src="./js/nav.js"></script>
+</body>
+</html>
